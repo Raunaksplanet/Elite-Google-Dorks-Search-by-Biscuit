@@ -64,16 +64,46 @@
                 </div>
             </div>
             <div class="hub">
-                <h3>Start From Here</h3>
-                <p>Find a Quick Self Hosted Bug Bounty or VDP Program For Yourself</p>
+                <h3>Prone Parameters</h3>
+                <p>Find Prone Parameters For Specific Vulnerability Types</p>
                 <button class="view-hub-button" onclick="toggleDropdown(this)">View Hub</button>
                 <div class="dropdown-content">
                     <ul>
-                        <li><a href="https://www.google.com/search?q=inurl : /responsible-disclosure/ reward" class="dropdown-link" target="_blank" data-hover-text="inurl : /responsible-disclosure/ reward">Responsible Disclosure Reward</a></li>
-                        <li><a href="https://www.google.com/search?q=inurl : / responsible-disclosure/ swag" class="dropdown-link" target="_blank" data-hover-text="inurl : / responsible-disclosure/ swag">Responsible Disclosure Swag</a></li>
-                        <li><a href="https://www.google.com/search?q=inurl : / responsible-disclosure/ bounty" class="dropdown-link" target="_blank" data-hover-text="inurl : / responsible-disclosure/ bounty">Responsible Disclosure Bounty</a></li>
-                        <li><a href="https://www.google.com/search?q=inurl: &quot;bug bounty program&quot; and intext: €" class="dropdown-link" target="_blank" data-hover-text='inurl: "bug bounty program" and intext: €'>Bug Bounty Program €</a></li>
-                        <li><a href="https://www.google.com/search?q=inurl: &quot;bug bounty program&quot; and intext: $" class="dropdown-link" target="_blank" data-hover-text='inurl: "bug bounty program" and intext: $'>Bug Bounty Program $</a></li>
+                        <h3>XSS Prone Parameters</h3>
+                        <li><a href="https://www.google.com/search?q=site:biscuit.com inurl:search= | inurl:query= | inurl:keyword= | inurl:lang= | inurl:term= | inurl:output= | inurl:api= | inurl:redirect_url= | inurl:return_url= | inurl:error_url= | inurl:success_url= | inurl:failure_url= " class="dropdown-link" target="_blank" data-hover-text="site:biscuit.com inurl:term= | inurl:output= | inurl:api= | inurl:redirect_url= | inurl:return_url= | inurl:error_url= | inurl:success_url= | inurl:failure_url=">search= query= keyword=</a></li>
+                        
+                        <h3>Open Redirect Prone Parameters</h3>
+                        <li><a href="https://www.google.com/search?q=site:biscuit.com inurl:url= | inurl:return= | inurl:next= | inurl:redirect= | inurl:redir= | inurl:ret= | inurl:r2= | inurl:page= | inurl:target= | inurl:destination= | inurl:link= | inurl:href= | inurl:goto= | inurl:forward= | inurl:redirect_url= | inurl:return_url= | inurl:error_url=" class="dropdown-link" target="_blank" data-hover-text="inurl:url= | inurl:return= | inurl:next= | inurl:redirect= | inurl:redir= | inurl:ret= | inurl:r2= | inurl:page= | inurl:target= | inurl:destination= | inurl:link= | inurl:href= | inurl:goto=">goto= forward= redir=</a></li>
+                        
+                        <h3>SQLi Prone Parameters</h3>
+                        <li><a href="https://www.google.com/search?q=site:biscuit.com  inurl:pid= | inurl:category= | inurl:cat= | inurl:action= | inurl:sid= | inurl:dir= | inurl:uid= | inurl:user= | inurl:username= | inurl:password= | inurl:pass= | inurl:pw= | inurl:auth= | inurl:login= | inurl:logout= | inurl:session= | inurl:token= | inurl:api_key= | inurl:api_secret= | inurl:& " class="dropdown-link" target="_blank" data-hover-text="site:biscuit.com | inurl:pid= | inurl:category= | inurl:cat= | inurl:action= | inurl:sid= | inurl:dir= | inurl:uid= | inurl:user= | inurl:username=">uid= auth= sid= category=</a></li>
+                        
+                        <h3>SSRF Prone Parameters</h3>
+                        <li><a href="https://www.google.com/search?q=site:biscuit.com inurl:http | inurl:url= | inurl:path= | inurl:dest= | inurl:html= | inurl:data= | inurl:domain= | inurl:page= | inurl:port= | inurl:protocol= | inurl:host= | inurl:hostname= | inurl:uri= | inurl:resource= | inurl:target= | inurl:redirect_url= | inurl:return_url= | inurl:error_url= | inurl:success_url= | inurl:failure_url= | inurl:&" class="dropdown-link" target="_blank" data-hover-text="site:biscuit.com inurl:http | inurl:url= | inurl:path= | inurl:dest= | inurl:html= | inurl:data= | inurl:domain= | inurl:page= | inurl:port=">host= protocol= domain=</a></li>
+                        
+                        <h3>LFI Prone Parameters</h3>
+                        <li><a href="https://www.google.com/search?q=site:biscuit.com inurl:include | inurl:dir | inurl:detail= | inurl:file= | inurl:folder= | inurl:inc= | inurl:locate= | inurl:doc= | inurl:conf= | inurl:config= | inurl:settings= | inurl:options= | inurl:params= | inurl:template= | inurl:theme= | inurl:layout= | inurl:view= | inurl:render= | inurl:display= | inurl:&" class="dropdown-link" target="_blank" data-hover-text="site:biscuit.com inurl:include | inurl:dir | inurl:detail= | inurl:file= | inurl:folder= | inurl:inc= | inurl:locate= | inurl:doc=">view= folder= doc= theme=</a></li>
+                        
+                        <h3>RCE Prone Parameters</h3>
+                        <li><a href="https://www.google.com/search?q=site:biscuit.com inurl:cmd | inurl:exec= | inurl:query= | inurl:code= | inurl:do= | inurl:run= | inurl:read= | inurl:ping= | inurl:shell= | inurl:terminal= | inurl:console= | inurl:execute= | inurl:eval= | inurl:system= | inurl:command= | inurl:script= | inurl:code= | inurl:payload= | inurl:input= | inurl:output= | inurl:& " class="dropdown-link" target="_blank" data-hover-text="site:biscuit.com inurl:cmd | inurl:exec= | inurl:query= | inurl:code= | inurl:do= | inurl:run= | inurl:read= | inurl:ping= | inurl:shell=">execute= script= output=</a></li>
+                        
+                        <h3>CSRF Prone Parameters</h3>
+                        <li><a href="https://www.google.com/search?q=site:biscuit.com inurl:token= | inurl:csrf= | inurl:auth= | inurl:login= | inurl:logout= | inurl:session= | inurl:cookie= | inurl:user= | inurl:username= | inurl:password= | inurl:pass= | inurl:pw= | inurl:& " class="dropdown-link" target="_blank" data-hover-text="site:biscuit.com inurl:token= | inurl:csrf= | inurl:auth= | inurl:login= | inurl:logout= | inurl:session= | inurl:cookie=">logout= token= cookie=</a></li>
+                        
+                        <h3>File Inclusion Prone Parameters</h3>
+                        <li><a href="https://www.google.com/search?q=site:biscuit.com inurl:file= | inurl:files= | inurl:include= | inurl:inc= | inurl:require= | inurl:load= | inurl:read= | inurl:write= | inurl:upload= | inurl:download= | inurl:import= | inurl:export= | inurl:template= | inurl:theme= | inurl:layout= | inurl:view= | inurl:render= | inurl:display= " class="dropdown-link" target="_blank" data-hover-text="site:biscuit.com inurl:file= | inurl:files= | inurl:include= | inurl:inc= | inurl:require= | inurl:load= | inurl:read=">import= upload= download=</a></li>
+                        
+                        <h3>Path Traversal Prone Parameters</h3>
+                        <li><a href="https://www.google.com/search?q=site:biscuit.com inurl:path= | inurl:dir= | inurl:folder= | inurl:file= | inurl:files= | inurl:include= | inurl:inc= | inurl:require= | inurl:load= | inurl:read= | inurl:write= | inurl:upload= | inurl:download= | inurl:import= | inurl:export= | inurl:template= | inurl:theme= | inurl:layout= | inurl:view= | inurl:render= | inurl:display= " class="dropdown-link" target="_blank" data-hover-text="ite:biscuit.com inurl:path= | inurl:dir= | inurl:folder= | inurl:file= | inurl:files= | inurl:include= | inurl:inc= | inurl:require=">layout= template= display=</a></li>
+                        
+                        <h3>HTTP Response Splitting Prone Parameters</h3>
+                        <li><a href="https://www.google.com/search?q=site:biscuit.com inurl:redirect= | inurl:redir= | inurl:return= | inurl:next= | inurl:page= | inurl:target= | inurl:destination= | inurl:link= | inurl:href= | inurl:goto= | inurl:forward= | inurl:redirect_url= | inurl:return_url= | inurl:error_url= | inurl:success_url= | inurl:failure_url= " class="dropdown-link" target="_blank" data-hover-text="site:biscuit.com inurl:redirect= | inurl:redir= | inurl:return= | inurl:next= | inurl:page= | inurl:target= | inurl:destination=">failure_url= success_url= error_url=</a></li>
+                        
+                        <h3>Information Disclosure Prone Parameters</h3>
+                        <li><a href="https://www.google.com/search?q=site:biscuit.com inurl:debug= | inurl:info= | inurl:details= | inurl:metadata= | inurl:stats= | inurl:analytics= | inurl:logs= | inurl:error= | inurl:exception= | inurl:stack= | inurl:trace= | inurl:dump= | inurl:export= | inurl:import=" class="dropdown-link" target="_blank" data-hover-text="site:biscuit.com inurl:debug= | inurl:info= | inurl:details= | inurl:metadata= | inurl:stats= | inurl:analytics= | inurl:logs=">info= details= metadata=</a></li>
+                        
+                        <h3>Insecure Direct Object Reference (IDOR) Prone Parameters</h3>
+                        <li><a href="https://www.google.com/search?q=site:biscuit.com inurl:id= | inurl:pid= | inurl:uid= | inurl:user= | inurl:username= | inurl:password= | inurl:pass= | inurl:pw= | inurl:auth= | inurl:login= | inurl:logout= | inurl:session= | inurl:token= | inurl:api_key= | inurl:api_secret=" class="dropdown-link" target="_blank" data-hover-text="site:biscuit.com inurl:id= | inurl:pid= | inurl:uid= | inurl:user= | inurl:username= | inurl:password= | inurl:pass= | inurl:pw= | inurl:auth=">token= id= pid= api_key=</a></li>
                     </ul>
                 </div>
             </div>
@@ -83,93 +113,7 @@
                 <button class="view-hub-button" onclick="toggleDropdown(this)">View Hub</button>
                 <div class="dropdown-content">
                     <ul>
-                        <li><a href="https://www.google.com/search?q=inurl : /responsible-disclosure/ reward" class="dropdown-link" target="_blank">Dork 1</a></li>
-                        <li><a href="https://www.google.com/search?q=inurl : / responsible-disclosure/ swag" class="dropdown-link" target="_blank">Dork 2</a></li>
-                        <li><a href="https://www.google.com/search?q=inurl : / responsible-disclosure/ bounty" class="dropdown-link" target="_blank">Dork 3</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="hub">
-                <h3>Start From Here</h3>
-                <p>Find a Quick Self Hosted Bug Bounty or VDP Program For Yourself</p>
-                <button class="view-hub-button" onclick="toggleDropdown(this)">View Hub</button>
-                <div class="dropdown-content">
-                    <ul>
-                        <li><a href="https://www.google.com/search?q=inurl : /responsible-disclosure/ reward" class="dropdown-link" target="_blank">Dork 1</a></li>
-                        <li><a href="https://www.google.com/search?q=inurl : / responsible-disclosure/ swag" class="dropdown-link" target="_blank">Dork 2</a></li>
-                        <li><a href="https://www.google.com/search?q=inurl : / responsible-disclosure/ bounty" class="dropdown-link" target="_blank">Dork 3</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="hub">
-                <h3>Start From Here</h3>
-                <p>Find a Quick Self Hosted Bug Bounty or VDP Program For Yourself</p>
-                <button class="view-hub-button" onclick="toggleDropdown(this)">View Hub</button>
-                <div class="dropdown-content">
-                    <ul>
-                        <li><a href="https://www.google.com/search?q=inurl : /responsible-disclosure/ reward" class="dropdown-link" target="_blank">Dork 1</a></li>
-                        <li><a href="https://www.google.com/search?q=inurl : / responsible-disclosure/ swag" class="dropdown-link" target="_blank">Dork 2</a></li>
-                        <li><a href="https://www.google.com/search?q=inurl : / responsible-disclosure/ bounty" class="dropdown-link" target="_blank">Dork 3</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="hub">
-                <h3>Start From Here</h3>
-                <p>Find a Quick Self Hosted Bug Bounty or VDP Program For Yourself</p>
-                <button class="view-hub-button" onclick="toggleDropdown(this)">View Hub</button>
-                <div class="dropdown-content">
-                    <ul>
-                        <li><a href="https://www.google.com/search?q=inurl : /responsible-disclosure/ reward" class="dropdown-link" target="_blank">Dork 1</a></li>
-                        <li><a href="https://www.google.com/search?q=inurl : / responsible-disclosure/ swag" class="dropdown-link" target="_blank">Dork 2</a></li>
-                        <li><a href="https://www.google.com/search?q=inurl : / responsible-disclosure/ bounty" class="dropdown-link" target="_blank">Dork 3</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="hub">
-                <h3>Start From Here</h3>
-                <p>Find a Quick Self Hosted Bug Bounty or VDP Program For Yourself</p>
-                <button class="view-hub-button" onclick="toggleDropdown(this)">View Hub</button>
-                <div class="dropdown-content">
-                    <ul>
-                        <li><a href="https://www.google.com/search?q=inurl : /responsible-disclosure/ reward" class="dropdown-link" target="_blank">Dork 1</a></li>
-                        <li><a href="https://www.google.com/search?q=inurl : / responsible-disclosure/ swag" class="dropdown-link" target="_blank">Dork 2</a></li>
-                        <li><a href="https://www.google.com/search?q=inurl : / responsible-disclosure/ bounty" class="dropdown-link" target="_blank">Dork 3</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="hub">
-                <h3>Start From Here</h3>
-                <p>Find a Quick Self Hosted Bug Bounty or VDP Program For Yourself</p>
-                <button class="view-hub-button" onclick="toggleDropdown(this)">View Hub</button>
-                <div class="dropdown-content">
-                    <ul>
-                        <li><a href="https://www.google.com/search?q=inurl : /responsible-disclosure/ reward" class="dropdown-link" target="_blank">Dork 1</a></li>
-                        <li><a href="https://www.google.com/search?q=inurl : / responsible-disclosure/ swag" class="dropdown-link" target="_blank">Dork 2</a></li>
-                        <li><a href="https://www.google.com/search?q=inurl : / responsible-disclosure/ bounty" class="dropdown-link" target="_blank">Dork 3</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="hub">
-                <h3>Start From Here</h3>
-                <p>Find a Quick Self Hosted Bug Bounty or VDP Program For Yourself</p>
-                <button class="view-hub-button" onclick="toggleDropdown(this)">View Hub</button>
-                <div class="dropdown-content">
-                    <ul>
-                        <li><a href="https://www.google.com/search?q=inurl : /responsible-disclosure/ reward" class="dropdown-link" target="_blank">Dork 1</a></li>
-                        <li><a href="https://www.google.com/search?q=inurl : / responsible-disclosure/ swag" class="dropdown-link" target="_blank">Dork 2</a></li>
-                        <li><a href="https://www.google.com/search?q=inurl : / responsible-disclosure/ bounty" class="dropdown-link" target="_blank">Dork 3</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="hub">
-                <h3>Start From Here</h3>
-                <p>Find a Quick Self Hosted Bug Bounty or VDP Program For Yourself</p>
-                <button class="view-hub-button" onclick="toggleDropdown(this)">View Hub</button>
-                <div class="dropdown-content">
-                    <ul>
-                        <li><a href="https://www.google.com/search?q=inurl : /responsible-disclosure/ reward" class="dropdown-link" target="_blank">Dork 1</a></li>
-                        <li><a href="https://www.google.com/search?q=inurl : / responsible-disclosure/ swag" class="dropdown-link" target="_blank">Dork 2</a></li>
-                        <li><a href="https://www.google.com/search?q=inurl : / responsible-disclosure/ bounty" class="dropdown-link" target="_blank">Dork 3</a></li>
+                        <li><a href="" class="dropdown-link" target="_blank" data-hover-text=""></a></li>
                     </ul>
                 </div>
             </div>
