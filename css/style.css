@@ -88,14 +88,25 @@ nav {
 nav ul li {
     margin-right: 20px;
     text-decoration: none;
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 nav ul li svg {
     width: 24px;
     height: 24px;
     fill: currentColor;
-    margin-left: 10px; /* Space between text and icon */
+    margin-left: 10px;
+    /* Space between text and icon */
+}
+
+p {
+    line-height: 22px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
 }
 
 /* ------------------------------------------------------------------ */
@@ -103,13 +114,18 @@ nav ul li svg {
 /* Dropdown content styling */
 .hub .dropdown-content {
     display: none;
-    background-color: #2c2f33; /* Dark background */
-    border: 1px solid #23272a; /* Border color */
+    background-color: #2c2f33;
+    /* Dark background */
+    border: 1px solid #23272a;
+    /* Border color */
     border-radius: 8px;
     margin-top: 10px;
-    padding: 15px; /* Increased padding for better spacing */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
-    font-family: 'Helvetica Neue', Arial, sans-serif; /* Improved font */
+    padding: 15px;
+    /* Increased padding for better spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Slightly stronger shadow */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    /* Improved font */
 }
 
 /* Show dropdown content */
@@ -126,46 +142,60 @@ nav ul li svg {
 
 /* List item styling */
 .hub .dropdown-content li {
-    margin: 8px 0; /* Increased margin for better spacing */
+    margin: 8px 0;
+    /* Increased margin for better spacing */
 }
 
 /* Dropdown link styling */
 .hub .dropdown-link {
     display: block;
-    padding: 12px 20px; /* Increased padding for better click area */
-    background-color: #7289da; /* Button background */
-    color: #ffffff; /* Text color */
+    padding: 12px 20px;
+    /* Increased padding for better click area */
+    background-color: #7289da;
+    /* Button background */
+    color: #ffffff;
+    /* Text color */
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     text-align: center;
-    font-weight: bold; /* Bold text */
-    font-size: 16px; /* Increased font size */
+    font-weight: bold;
+    /* Bold text */
+    font-size: 16px;
+    /* Increased font size */
 }
 
 /* Hover effect for dropdown links */
 .hub .dropdown-link:hover {
-    background-color: #5a6fb1; /* Hover background */
-    transform: scale(1.05); /* Slight scaling effect */
+    background-color: #5a6fb1;
+    /* Hover background */
+    transform: scale(1.05);
+    /* Slight scaling effect */
 }
 
 /* Button styling */
 .view-hub-button {
-    background-color: #f04747; /* Button background */
-    color: #ffffff; /* Text color */
+    background-color: #f04747;
+    /* Button background */
+    color: #ffffff;
+    /* Text color */
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    font-size: 16px; /* Increased font size */
-    font-weight: bold; /* Bold text */
+    font-size: 16px;
+    /* Increased font size */
+    font-weight: bold;
+    /* Bold text */
 }
 
 /* Hover effect for button */
 .view-hub-button:hover {
-    background-color: #d33c3c; /* Hover background */
-    transform: scale(1.05); /* Slight scaling effect */
+    background-color: #d33c3c;
+    /* Hover background */
+    transform: scale(1.05);
+    /* Slight scaling effect */
 }
 
 /* Dropdown link hover text styling */
@@ -181,6 +211,7 @@ nav ul li svg {
 
 /* Dropdown link hover text before */
 .dropdown-link::before {
+    margin-top: -9px;
     content: attr(data-hover-text);
     position: absolute;
     left: 0;
@@ -188,7 +219,7 @@ nav ul li svg {
     height: 100%;
     color: transparent;
     transition: color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     overflow: hidden;
     opacity: 0;
     transform: translateY(-10px);
@@ -208,7 +239,10 @@ nav ul li svg {
 
 /* ------------------------------------------------------------------ */
 .bar {
-    height: 2px;          /* Adjust the height as needed */
-    background-color: #7289da; /* Adjust the color as needed */
-    margin: 10px 0;      /* Adjust the margin as needed */
+    height: 2px;
+    /* Adjust the height as needed */
+    background-color: #7289da;
+    /* Adjust the color as needed */
+    margin: 10px 0;
+    /* Adjust the margin as needed */
 }
