@@ -119,7 +119,7 @@ p {
     border: 1px solid #23272a;
     /* Border color */
     border-radius: 8px;
-    margin-: 10px;
+    margin-top: 10px;
     padding: 15px;
     /* Increased padding for better spacing */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -168,37 +168,29 @@ p {
 /* Hover effect for dropdown links */
 .hub .dropdown-link:hover {
     background-color: #5a6fb1;
-    /* Hover background */
     transform: scale(1.05);
-    /* Slight scaling effect */
 }
 
 /* Button styling */
 .view-hub-button {
     background-color: #f04747;
-    /* Button background */
     color: #ffffff;
-    /* Text color */
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     font-size: 16px;
-    /* Increased font size */
     font-weight: bold;
-    /* Bold text */
 }
 
 /* Hover effect for button */
 .view-hub-button:hover {
     background-color: #d33c3c;
-    /* Hover background */
     transform: scale(1.05);
-    /* Slight scaling effect */
 }
 
-/* Dropdown link hover text styling */
+
 .dropdown-link {
     position: relative;
     display: inline-block;
@@ -210,7 +202,7 @@ p {
 }
 
 /* Dropdown link hover text before */
-.dropdown-link::before {
+.dropdown-link::before  {
     margin-top: -9px;
     content: attr(data-hover-text);
     position: absolute;
@@ -225,14 +217,12 @@ p {
     transform: translateY(-10px);
 }
 
-/* Hover effect for dropdown link hover text */
 .dropdown-link:hover::before {
     color: #2c2f33;
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Hover effect for dropdown link text */
 .dropdown-link:hover {
     color: transparent;
 }
@@ -240,9 +230,6 @@ p {
 /* ------------------------------------------------------------------ */
 .bar {
     height: 2px;
-    /* Adjust the height as needed */
     background-color: #7289da;
-    /* Adjust the color as needed */
     margin: 10px 0;
-    /* Adjust the margin as needed */
 }
