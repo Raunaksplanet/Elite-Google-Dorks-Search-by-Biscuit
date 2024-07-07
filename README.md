@@ -35,14 +35,16 @@ If you have suggestions for new dorks or improvements, feel free to submit a pul
     └─$ tree -L 3
     .
     ├── css
-    │   └── style.css
+    │   └── style.css   
+    ├── Extra
+    │   └── example.html
     ├── img
-    │   └── favicon.ico
-    ├── index.html
+    │   └── favicon.ico   
+    ├── index.html        
     └── js
-        └── script.js
+        └── script.js     
     
-    4 directories, 4 files
+    5 directories, 5 files
 
 ## Disclaimer
 
